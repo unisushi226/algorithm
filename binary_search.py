@@ -27,7 +27,7 @@ import bubble_sort as bb
 
 def main():
     n =129
-    l, ans = bubble_binary(n)
+    l, ans = Bubble_Binary(n)
     print(ans)
     for i in range(n):
         space = ' '*(len(str(len(l)+1)) - len(str(i+1))+1)
@@ -35,13 +35,13 @@ def main():
     
     return
 
-def bubble_binary(n):
+def Bubble_Binary(n):
     l = bb.make_list(n)
-    l = bb.bubblesort(l)
-    ans = binary_search(l, 'binary')
+    l = bb.BubbleSort(l)
+    ans = BinarySearch(l, 'binary')
     return l, ans
 
-def binary_search(list, item):
+def BinarySearch(list, item):
     step = 0
     low = 0                        # lowとhighを使ってリストの検索部分を追跡
     high = len(list) - 1

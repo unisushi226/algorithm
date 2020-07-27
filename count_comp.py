@@ -9,16 +9,16 @@ import time
 
 def main():
     
-    n=500000000
+    n=1000000000
     print('{}回'.format(n))
     time_int(n)
     time_str(n)
 
 def time_str(n):
-    
+    a, b ='a', 'b'
     time_sta = time.time() # 時間計測開始
     for i in range(n):
-        if 'a' > 'b':
+        if a > b:
             True
             
     time_end = time.time() # 時間計測終了
@@ -28,8 +28,7 @@ def time_str(n):
 
 
 def time_int(n):
-    a=1
-    b=2
+    a, b = 1, 2
 
     time_sta = time.time() # 時間計測開始
     for i in range(n):

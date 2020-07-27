@@ -15,11 +15,11 @@ import time
 import numpy as np
 
 def main():
-    bef_list = make_list(200)
+    bef_list = make_list(10)
     
     aft_list = [s for s in bef_list]
     #time_sta = time.time() # 時間計測開始    
-    aft_list = bubblesort(aft_list)
+    aft_list = BubbleSort(aft_list)
     #time_end = time.time() # 時間計測終了
     #tim = time_end- time_sta
     #print('timecount>>{}s'.format(tim))
@@ -27,7 +27,7 @@ def main():
     return
 
 # バブルソートする
-def bubblesort(namelist):
+def BubbleSort(namelist):
     for i in range(len(namelist)-1):
         for j in range(len(namelist)-1):
             n_j = namelist[j]
